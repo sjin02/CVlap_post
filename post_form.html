@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POST_FORM</title>
+    <!--OG(Open Graph data)  -->
+    <meta property="og:title" content="post_form" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="배포 후 생성된 URL" />
+    <meta property="og:image" content="배포 후에 생성된 이미지 URL" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="prec  onnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Source+Sans+3:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/e1adcedd20.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--CSS -->
+    <link rel="stylesheet" href="css/post_form.css" />
+    <!-- Javascript -->
+    <script src="src/main.js" defer></script>
+  </head>
+  <body>
+    <!-- Post_form -->
+    <div id="post__form" class="max-container">
+      <form class="post__form__menu">
+        <label for="fileUpload" class="folder__icon-container">
+          <img src="images/folder_icon.png" class="folder__icon" alt="" />
+          <input type="file" id="fileUpload" />
+        </label>
+        <div class="choice">
+          <input type="radio" id="Choice1" name="choice" value="public" />
+          <label for="contactChoice1">공개</label>
+
+          <input type="radio" id="Choice2" name="choice" value="private" />
+          <label for="contactChoice2">비공개</label>
+
+          <input type="radio" id="Choice3" name="choice" value="protect" />
+          <label for="contactChoice3">보호</label>
+        </div>
+      </form>
+
+      <div class="post__form">
+        <div class="bar--gray"></div>
+        <input type="text" class="post__form__title" placeholder="제목" />
+        <div class="bar--gray--thin"></div>
+        <textarea
+          class="post__form__content"
+          placeholder="내용을 입력하세요..."
+        ></textarea>
+        <div class="bar--gray--thin" style="width: 100%"></div>
+      </div>
+      <input type="submit" value="등록" class="submit" />
+      <!-- 수정시에는 수정버튼으로 변경 -->
+    </div>
+  </body>
+</html>
+
