@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>POST_DETAIL</title>
     <!--OG(Open Graph data)  -->
-    <meta property="og:title" content="post_list" />
+    <meta property="og:title" content="post_detail" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="배포 후 생성된 URL" />
     <meta property="og:image" content="배포 후에 생성된 이미지 URL" />
@@ -22,23 +22,23 @@
       crossorigin="anonymous"
     ></script>
     <!--CSS -->
-    <link rel="stylesheet" href="css/post_list.css" />
+    <link rel="stylesheet" href="css/post_detail.css" />
     <!-- Javascript -->
     <script src="src/main.js" defer></script>
   </head>
   <body>
-    <div>
+    <div id="post__detail" class="max-container">
       <section>
         <h2 class="post__detail__title">제목이 들어갑니다</h2>
-        <div>
-          <li class="post__detail__username">작성자</li>
+        <div class="post__detail__inform">
+          <li class="post__detail__user">작성자</li>
           <li class="post__detail__date">작성일 2024.01.13</li>
           <li class="post__detail__modifydate">수정 2024.01.13</li>
-          <button>수정</button>
-          <button>삭제</button>
+          <button class="post__detail__modify">수정</button>
+          <button class="post__detail__delete">삭제</button>
         </div>
         <div class="bar--gray--thin"></div>
-        <p>
+        <p class="post__detail__content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
           repudiandae illo impedit mollitia quasi, deserunt exercitationem
           quibusdam possimus repellat aperiam at sed? Harum eaque, atque
@@ -48,19 +48,70 @@
       </section>
       <section>
         <div class="container">
-          <div class="user__info">
-            <img src="/images/user.png" alt="User Image" class="user-image" />
-            <div>
-              <p class="post__detail__username">작성자</div>
-              <textarea
-                type="text"
-                class="text-input"
-                placeholder="내용을 입력하세요..."
-                ></textarea>
-                <button>등록</button>
+          <div class="post__detail__comment">
+            <div class="user__info">
+              <img
+                src="/images/user.png"
+                alt="User Image"
+                class="user__image"
+              />
+              <p class="post__detail__username">작성자</p>
             </div>
+            <textarea
+              type="text"
+              class="text-input"
+              placeholder="내용을 입력하세요..."
+            ></textarea>
+            <button class="comment__submit">등록</button>
           </div>
         </div>
+      </section>
+      <section>
+        <div class="post__detail__comments__info">
+          <li>댓글</li>
+          <li>2</li>
+        </div>
+        <div class="bar--gray--thin"></div>
+        <div>
+          <div class="post__detail__comments">
+            <img src="/images/user.png" alt="User Image" class="user__image" />
+            <li>작성자</li>
+            <li>2024.01.18</li>
+            <li>02:32</li>
+            <div class="post__detail__button">
+              <button class="comment__button">수정</button
+              ><button class="comment__button">삭제</button>
+            </div>
+          </div>
+          <p class="comments__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam at
+            non nulla nobis tenetur, aperiam explicabo maiores, alias magni
+            itaque soluta dignissimos, numquam reprehenderit! Accusamus, veniam?
+            Ut minima quaerat nesciunt.
+          </p>
+          <div class="bar--gray--thin"></div>
+        </div>
+        <!-- 반복 -->
+        <div>
+          <div class="post__detail__comments">
+            <img src="/images/user.png" alt="User Image" class="user__image" />
+            <li>작성자</li>
+            <li>2024.01.18</li>
+            <li>02:32</li>
+            <div class="post__detail__button">
+              <button class="comment__button">수정</button
+              ><button class="comment__button">삭제</button>
+            </div>
+          </div>
+          <p class="comments__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam at
+            non nulla nobis tenetur, aperiam explicabo maiores, alias magni
+            itaque soluta dignissimos, numquam reprehenderit! Accusamus, veniam?
+            Ut minima quaerat nesciunt.
+          </p>
+          <div class="bar--gray--thin"></div>
+        </div>
+        <!-- 반복끝 -->
       </section>
     </div>
   </body>
