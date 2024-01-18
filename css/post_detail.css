@@ -126,6 +126,8 @@ li {
   height: 6rem;
   margin: 1rem;
   padding: 1rem;
+  max-width: 97%;
+  min-width: 97%;
   border: 2px solid var(--color-brightgray); /* 원하는 테두리 색상으로 변경 */
 }
 .comment__submit {
