@@ -103,7 +103,7 @@ li {
   height: 1px;
   background-color: var(--color-primary-variant);
 }
-.post__list {
+.post-post {
   display: grid;
   margin-left: 1rem;
   margin-block: 1.8rem;
@@ -144,6 +144,23 @@ li {
 
 .number__list:hover,
 .slider__btn:hover {
+  background-color: var(--color-text);
+  color: var(--color-primary);
+}
+
+a {
+  text-decoration: none; /* 링크의 밑줄 제거 */
+  color: inherit; /* 링크의 색상을 부모 요소의 색상으로 상속 */
+  cursor: pointer; /* 기본 커서 설정 */
+}
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.current {
   background-color: var(--color-text);
   color: var(--color-primary);
 }
